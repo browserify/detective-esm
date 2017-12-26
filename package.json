@@ -1,0 +1,38 @@
+{
+  "name": "detective-esm",
+  "description": "find es module dependencies",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/detective-esm/issues"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3",
+    "tape": "^4.8.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/detective-esm",
+  "keywords": [
+    "analyze",
+    "ast",
+    "es-modules",
+    "import",
+    "source"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/detective-esm.git"
+  },
+  "scripts": {
+    "test": "standard && node test/index.js"
+  },
+  "standard": {
+    "ignore": [
+      "test/files"
+    ]
+  },
+  "dependencies": {
+    "acorn": "^5.2.1"
+  }
+}

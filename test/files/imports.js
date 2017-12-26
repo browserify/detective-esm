@@ -1,0 +1,5 @@
+import a from 'a'
+import { b } from 'b'
+import { c as d } from 'c'
+import 'xyz'
+import * as ns from 'ns'
