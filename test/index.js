@@ -8,8 +8,8 @@ test('detects imports but not requires', function (t) {
 
   t.equal(result.strings.length, 1, 'should have found a single dependency')
   t.equal(result.expressions.length, 0, 'should have empty `expressions` array for parity with detective')
-  t.ok(result.strings.includes('a'), 'should find `import`')
-  t.notOk(result.strings.includes('b'), 'should ignore `require`')
+  t.notEqual(result.strings.indexOf('a'), -1, 'should find `import`')
+  t.equal(result.strings.indexOf('b'), -1, 'should ignore `require`')
   t.end()
 })
 
