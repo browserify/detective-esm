@@ -1,4 +1,4 @@
-var acorn = require('acorn')
+var acorn = require('acorn-node')
 
 module.exports = function detectiveEsm (source, opts) {
   opts = opts || {}

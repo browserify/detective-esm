@@ -7,8 +7,8 @@
     "url": "https://github.com/goto-bus-stop/detective-esm/issues"
   },
   "devDependencies": {
-    "standard": "^10.0.3",
-    "tape": "^4.8.0"
+    "standard": "^14.3.1",
+    "tape": "^4.11.0"
   },
   "homepage": "https://github.com/goto-bus-stop/detective-esm",
   "keywords": [
@@ -33,6 +33,6 @@
     ]
   },
   "dependencies": {
-    "acorn": "^5.2.1"
+    "acorn-node": "^1.6.1"
   }
 }

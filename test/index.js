@@ -16,7 +16,7 @@ test('detects imports but not requires', function (t) {
 test('detects imported bindings', function (t) {
   var result = detective(fs.readFileSync(path.join(__dirname, '/files/imports.js')))
 
-  t.deepEqual(result.strings, [ 'a', 'b', 'c', 'xyz', 'ns' ])
+  t.deepEqual(result.strings, ['a', 'b', 'c', 'xyz', 'ns'])
   t.deepEqual(result.imports, [
     { from: 'a', import: 'default', as: 'a' },
     { from: 'b', import: 'b', as: 'b' },
