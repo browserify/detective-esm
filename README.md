@@ -8,8 +8,8 @@ find ES module dependencies
 
 [npm-image]: https://img.shields.io/npm/v/detective-esm.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/detective-esm
-[travis-image]: https://img.shields.io/travis/goto-bus-stop/detective-esm.svg?style=flat-square
-[travis-url]: https://travis-ci.org/goto-bus-stop/detective-esm
+[travis-image]: https://img.shields.io/travis/com/browserify/detective-esm.svg?style=flat-square
+[travis-url]: https://travis-ci.com/browserify/detective-esm
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: http://npm.im/standard
 
