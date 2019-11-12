@@ -33,6 +33,7 @@
     ]
   },
   "dependencies": {
-    "acorn-node": "^1.6.1"
+    "acorn-node": "^1.6.1",
+    "xtend": "^4.0.2"
   }
 }

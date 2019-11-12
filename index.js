@@ -1,8 +1,9 @@
 var acorn = require('acorn-node')
+var xtend = require('xtend')
 
 module.exports = function detectiveEsm (source, opts) {
   opts = opts || {}
-  opts.parse = Object.assign({
+  opts.parse = xtend({
     sourceType: 'module'
   }, opts.parse)
 
