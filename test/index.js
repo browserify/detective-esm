@@ -4,7 +4,7 @@ var fs = require('fs')
 var path = require('path')
 
 test('detects imports but not requires', function (t) {
-  var result = detective(fs.readFileSync(path.join(__dirname, '/files/require.js')))
+  var result = detective(fs.readFileSync(path.join(__dirname, '/files/require.mjs')))
 
   t.equal(result.strings.length, 1, 'should have found a single dependency')
   t.equal(result.expressions.length, 0, 'should have empty `expressions` array for parity with detective')
@@ -14,7 +14,7 @@ test('detects imports but not requires', function (t) {
 })
 
 test('detects imported bindings', function (t) {
-  var result = detective(fs.readFileSync(path.join(__dirname, '/files/imports.js')))
+  var result = detective(fs.readFileSync(path.join(__dirname, '/files/imports.mjs')))
 
   t.deepEqual(result.strings, ['a', 'b', 'c', 'xyz', 'ns'])
   t.deepEqual(result.imports, [
@@ -27,7 +27,7 @@ test('detects imported bindings', function (t) {
 })
 
 test('detects exported bindings', function (t) {
-  var result = detective(fs.readFileSync(path.join(__dirname, '/files/exports.js')))
+  var result = detective(fs.readFileSync(path.join(__dirname, '/files/exports.mjs')))
 
   t.deepEqual(result.exports, [
     { export: 'a', as: 'default' },
